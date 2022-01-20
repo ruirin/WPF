@@ -1,11 +1,35 @@
-﻿<Window x:Class="LightningChart.MainWindow"
+﻿<Window x:Class="LightningChartTest.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:lcusb="http://schemas.arction.com/charting/ultimate/"
-        xmlns:local="clr-namespace:LightningChart"
+        xmlns:local="clr-namespace:LightningChartTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
+        Title="LightningChart" Height="800" Width="800">
     
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Button Content="test"
+                    Click="QueueDataToGraph" />
+            <Button Content="Loop Test"
+                    Click="LoopTest" />
+            <lcusb:LightningChart Name="lightningChart1"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart2"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart3"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart4"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart5"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart6"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart7"
+                                  Height="200" />
+            <lcusb:LightningChart Name="lightningChart8"
+                                  Height="200" />
+        </StackPanel>
+    </ScrollViewer>
 </Window>
